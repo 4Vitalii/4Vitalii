@@ -95,20 +95,21 @@ public class Main {
         Random rnd = new Random();
         for (int i = 0 ; i < arr.length; i++){
             arr [i] = rnd.nextInt(10);
+            System.out.println(arr[i] + " ");
 
         }
         int min = arr [0];
         int max = arr [0];
         for (int i = 0; i< arr.length;i++){
-            if (min > arr[i]){
+            if (min > arr[i]) {
                 min = arr[i];
+            }
             if (max < arr[i]){
                     max = arr[i];
                 }
-            }
         }
         System.out.println();
-        System.out.println("Mix is" + " " + min);
+        System.out.println("Min is" + " " + min);
         System.out.println();
         System.out.println("Max is" + " " + max);
 
